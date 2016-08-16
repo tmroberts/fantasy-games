@@ -46,20 +46,5 @@ table {
   border-spacing: 0; }
 
 /* End of CSS reset */
-body {
-  background-color: #CCC; }
-
-.container {
-  background-color: #FFF;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  width: 40%; }
-
-ul {
-  padding: 0; }
-
-li {
-  border: solid 1px #CCC;
-  list-style-type: none;
-  margin: 10px; }
+p {
+  color: blue; }
