@@ -4,33 +4,47 @@
 
   <head>
     <meta charset="utf-8" />
-    <title>Fantasy Game!</title>
+    <title>Fight Game!</title>
     <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="container">
-      <ul id="the-list">
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-        <li>Fourth Item</li>
-      </ul>
+      <div class="header">
+        <h1>Fight Game !</h1>
+      </div>
+
+      <div class = "contenders">
+
+        <div class="red-dude">
+          <div class="sprite"></div>
+          <div class="info"></div>
+        </div>
+
+        <div class = "blue-dude">
+          <div class="sprite"></div>
+          <div class="info"></div>
+        </div>
+
+        <script type="text/template" id="char-template">
+          <div class="name"><%= name %></div>
+          <div class="hp"><%= hp %></div>
+        </script>
+      </div>
 
 
-        <p>This is my paragraph</p>
+      <div class = "message">
+        <div class="message">*** Prepare to FIGHT ! ! *** </div>
+      </div>
 
-
-
-
+      <button class="start-button">Start</button>
     </div>
     <!-- Add jQuery script line here -->
     <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="character-generator.js"></script>
     <script src="script.js"></script>
-    <script>LoDashIt.start();</script>
-
-
+    <script>Fantasy.start();</script>
 
   </body>
 
