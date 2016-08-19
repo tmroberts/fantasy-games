@@ -78,20 +78,53 @@ body {
   height: 90px;
   width: 60px; }
 
-.red-dude {
+.contenders .red-dude {
   background-color: darkorange;
   display: inline-block;
   width: 20%;
   margin-left: 28%; }
 
-.blue-dude {
+.red-dude .sprite {
+  transform: scaleX(-1); }
+
+.red-dude .hurt {
+  background-position: -805px 0; }
+
+.red-dude-yay {
+  background-position: -740px 0px; }
+
+.red-dude .dead {
+  background-size: 500%;
+  background-position: 350px 0px;
+  width: 87px; }
+
+.contenders .blue-dude {
   outline: 1px solid red;
   background-color: darkorange;
   width: 20%;
   display: inline-block; }
 
 .blue-dude .sprite {
-  background-position: -5px 94px;
+  background-position: -5px 94px; }
+
+.blue-dude .hurt {
+  background-position: -805px 94px; }
+
+.blue-dude .sprite.hurt {
+  background-position: -805px, 94px; }
+
+.blue-dude .dead {
+  background-size: 500%;
+  background-position: -1340px 94px;
+  transform: scaleX(-1);
+  width: 87px; }
+
+.blue-dude-yay {
+  background-position: -740px 94px;
+  transform: scaleX(-1); }
+
+.blue-dude-dead {
+  background-position: -805px 94px;
   transform: scaleX(-1); }
 
 .name {

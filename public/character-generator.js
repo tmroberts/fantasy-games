@@ -3,7 +3,6 @@ if (this.Fantasy === undefined) this.Fantasy = {};
 
 (function(context) {
 
-
     function generateCombatant() {
 
       var NameList =['red raider', 'red roscoe', 'red ryder', 'red ralph','blue brother', 'blue blazer', 'blue marlin', 'bob'];
@@ -16,7 +15,6 @@ if (this.Fantasy === undefined) this.Fantasy = {};
       var hp = generateHP();
 
       return {name: name, hp: hp};
-
 
 
     }
